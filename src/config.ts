@@ -6,6 +6,7 @@ export const themeConfig: ThemeConfig = {
     website: 'https://mindspace.trueberryless.org', // Site domain
     title: 'Mindspace', // Site title
     author: 'trueberryless', // Author name
+    authorUrl: 'https://trueberryless.org', // Author URL
     description: 'Thoughtless blogs about God and the world', // Site description
     language: 'en-US' // Default language
   },
