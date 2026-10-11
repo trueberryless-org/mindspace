@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "entry": ["scripts/*.ts", "src/plugins/*.mjs", "tests/**/*.{test,spec}.ts", "tests/serve.mjs"],
+  "ignoreIssues": {
+    "src/types/**": ["types"],
+    "src/utils/draft.ts": ["exports"]
+  },
+  "ignore": ["src/components/examples/**", "src/components/ui/_VariableBlurMask.astro"]
+}

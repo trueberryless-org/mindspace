@@ -3,10 +3,10 @@ import type { ThemeConfig } from './types'
 export const themeConfig: ThemeConfig = {
   // SITE INFO ///////////////////////////////////////////////////////////////////////////////////////////
   site: {
-    website: 'https://mindspace.trueberryless.org', // Site domain
+    website: 'https://mindspace.felixs.dev', // Site domain
     title: 'Mindspace', // Site title
     author: 'trueberryless', // Author name
-    authorUrl: 'https://trueberryless.org', // Author URL
+    authorUrl: 'https://felixs.dev', // Author URL
     description: 'Thoughtless blogs about God and the world', // Site description
     language: 'en-GB' // Default language
   },

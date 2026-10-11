@@ -10,13 +10,11 @@ const hasContent = aboutEntry?.body
 const { Content } = hasContent && aboutEntry ? await render(aboutEntry) : { Content: null }
 ---
 
-{
-  hasContent && Content && (
-    <div class="about prose">
-      <Content />
-    </div>
-  )
-}
+{hasContent && Content && (
+  <div class="about prose">
+    <Content />
+  </div>
+)}
 
 <style>
   .about:not(:empty) {

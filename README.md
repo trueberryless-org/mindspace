@@ -59,6 +59,27 @@ Check the [demo](https://astro-chiri.netlify.app/) for more details.
 - https://shud.in/
 - https://retypeset.radishzz.cc/
 
+## Development
+
+Requires Node.js 24 and pnpm. The site is built on the [Chiri](https://github.com/the3ash/astro-chiri) theme.
+
+```shell
+pnpm install
+pnpm dev
+```
+
+| Command             | Description                                                         |
+| ------------------- | ------------------------------------------------------------------- |
+| `pnpm check`        | Type check with `astro check`                                       |
+| `pnpm lint`         | Lint with oxlint                                                    |
+| `pnpm format:check` | Check formatting with Prettier                                      |
+| `pnpm knip`         | Find unused files and dependencies                                  |
+| `pnpm test`         | Unit tests with Vitest                                              |
+| `pnpm test:e2e`     | Build, then run the Playwright tests against the built `dist` folder |
+| `pnpm new`          | Create a new post                                                   |
+
 ## License
 
-MIT
+Licensed under the MIT license, Copyright © trueberryless.
+
+See [LICENSE](https://github.com/trueberryless-org/mindspace/blob/main/LICENSE) for more information.

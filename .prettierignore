@@ -38,3 +38,39 @@ coverage/
 *.mp3
 *.wav
 *.pdf
+
+# Dependency directories
+build/
+out/
+
+# Build and generated files
+*.min.*
+*.bundle.*
+*.map
+
+# Git and version control
+**/.git
+
+# Framework-specific files
+next-env.d.ts
+__generated__/
+
+# Test and coverage files
+playwright-report/
+test-results/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+Thumbs.db
+
+# Markdown and MDX files
+*.md
+*.mdx
+
+# Changelog
+.changeset

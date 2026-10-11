@@ -1,3 +1,4 @@
+import { unified } from '@astrojs/markdown-remark'
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
@@ -26,12 +27,20 @@ export default defineConfig({
     }
   },
   markdown: {
+    processor: unified({
+      remarkPlugins: [
+        remarkMath,
+        remarkDirective,
+        remarkEmbeddedMedia,
+        remarkReadingTime,
+        remarkTOC
+      ],
+      rehypePlugins: [rehypeKatex, rehypeCleanup, rehypeImageProcessor, rehypeCopyCode]
+    }),
     shikiConfig: {
       theme: 'css-variables',
       wrap: false
-    },
-    remarkPlugins: [remarkMath, remarkDirective, remarkEmbeddedMedia, remarkReadingTime, remarkTOC],
-    rehypePlugins: [rehypeKatex, rehypeCleanup, rehypeImageProcessor, rehypeCopyCode]
+    }
   },
   integrations: [
     playformInline({
